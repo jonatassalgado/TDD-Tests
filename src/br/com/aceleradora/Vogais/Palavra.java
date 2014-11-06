@@ -3,6 +3,12 @@ package br.com.aceleradora.Vogais;
 public class Palavra {
 
 	public int contaVogais(String palavra) {
+		
+		if (palavra == null){
+			return 0;
+		}
+			
+		
 		int cont = 0;
 		
 		palavra = palavra.toLowerCase();

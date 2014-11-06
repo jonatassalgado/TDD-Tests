@@ -34,4 +34,19 @@ public class PalavraTeste {
 		assertEquals(3, result);
 	}
 	
+	@Test 
+	public void retorna0QuandoAPalavraNaoTiverVogal(){
+		int result = palavra.contaVogais("Wpytyclz");
+		
+		assertEquals(0, result);
+	}
+	
+	@Test
+	public void retorna0QuandoNaoExistirPalavra(){
+		int result = palavra.contaVogais(null);
+		
+		assertEquals(0, result);
+	}
+
+	
 }
